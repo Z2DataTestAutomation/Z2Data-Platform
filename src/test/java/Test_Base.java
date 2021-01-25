@@ -31,6 +31,7 @@ public class Test_Base {
 
     @AfterSuite
     public void TearDown() {
+        driver.manage().deleteAllCookies();
         driver.quit();
     }
 
