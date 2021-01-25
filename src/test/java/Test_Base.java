@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Test_Base {
 
-   public static WebDriver driver;
+   /*public static WebDriver driver;
    String TestURL = "https://app1.z2data.com";
     @BeforeSuite
      public void Open_Driver() {
@@ -46,14 +46,6 @@ public class Test_Base {
             File source = TS.getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(source, new File("./Screenshot/" + result.getName()+".png"));
 
-        }
-*/
-   }
-
-
-
-
-
    @AfterSuite
 
     public void Close_Driver(){
@@ -61,5 +53,5 @@ public class Test_Base {
        driver.quit();
    }
 
-
+*/
 }
