@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Z2data Platform" />
         <module name="Z2data_Platform" />
+        <module name="Z2Data-Platform-SE" />
       </profile>
     </annotationProcessing>
   </component>
