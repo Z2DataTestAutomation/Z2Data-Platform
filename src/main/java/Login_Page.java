@@ -2,8 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class Login_Page {
-    private final WebDriver driver;
-
+    private WebDriver driver;
     public Login_Page(WebDriver driver) {
         this.driver = driver;
     }

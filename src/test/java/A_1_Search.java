@@ -7,8 +7,6 @@ import org.testng.annotations.Test;
 
 public class A_1_Search extends Test_Base{
 
-    private WebDriver driver;
-
     @Test(description = "TS001 || Login to Z2Data Platform", priority = 1)
     public void Login() {
         Login_Page Login_Obj = new Login_Page(driver);

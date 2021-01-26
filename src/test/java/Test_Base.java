@@ -13,7 +13,6 @@ public class Test_Base {
     private String Prod_URL = "Test" ;
     private String Landing_Url = "Test";
 
-
     @BeforeSuite
     public void Setup(){
         Login_Page LoginObj = new Login_Page(driver);
@@ -24,9 +23,7 @@ public class Test_Base {
     }
 
     @AfterMethod
-    public void Back_To_Landing(){
-        driver.navigate().to(Landing_Url);
-    }
+    public void Back_To_Landing(){ driver.navigate().to(Landing_Url);}
 
     @AfterSuite
     public void TearDown() {

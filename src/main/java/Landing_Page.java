@@ -1,13 +1,11 @@
-
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 
 public class Landing_Page {
     private final WebDriver driver;
 
-    public Landing_Page(WebDriver driver) {
-        this.driver = driver;
-    }
+    public Landing_Page(WebDriver driver) { this.driver = driver;}
 
     // Data_Explorer Tab
     public By Data_Explorer_dropdown = By.id("dropdownFormObs");
@@ -26,18 +24,14 @@ public class Landing_Page {
     public By Discovery_dropdown = By.id("dropdownFormObs");
     public By Supplier_Tic = By.xpath("//a[normalize-space()='Suppliers']");
     public By Industries_Tic = By.xpath("//a[normalize-space()='Industries']");
-
     public By Impact_Analyzer_Tab = By.xpath("//span[normalize-space()='Impact Analyzer']");
-
     public By Outreach_Tab = By.xpath("//span[normalize-space()='Outreach']");
 
     //Trackers Tab
     public By Trackers_dropdown = By.xpath("//span[normalize-space()='Trackers']");
     public By PCN_Trackers_Tic = By.xpath("//h5[normalize-space()='PCN Trackers']");
     public By Incident_Tracker_Tic = By.xpath("//h5[normalize-space()='Incident Tracker']");
-
     public By Reports_Tab = By.xpath("//span[normalize-space()='Reports']");
-
     public By Alert_Tab = By.xpath("//span[normalize-space()='Alerts']");
 
     // Search dropdown
