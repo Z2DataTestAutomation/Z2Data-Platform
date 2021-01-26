@@ -1,4 +1,4 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
+import com.shaft.gui.browser.BrowserFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -17,8 +17,7 @@ public class Test_Base {
     @BeforeSuite
     public void Setup(){
         Login_Page LoginObj = new Login_Page(driver);
-       WebDriverManager.chromedriver().setup();
-        //driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
+        driver = BrowserFactory.getBrowser(BrowserFactory.BrowserType.GOOGLE_CHROME);
         driver.manage().timeouts().pageLoadTimeout(150, TimeUnit.SECONDS);
         driver.navigate().to(Test_URL);
         LoginObj.Z2D_SignIn();
