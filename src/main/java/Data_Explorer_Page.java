@@ -50,6 +50,17 @@ public class Data_Explorer_Page {
     public By More_filter_Btn = By.cssSelector("div.input-group.input-group-sm.float-left.width-300:nth-child(1) > input");
     public By MPN_IPN_Switcher = By.cssSelector("div[class='jtoggler-control']");
 
+    // Data_Explorer_ِBOM View
+    //MPN and IPN View
+    public By Toggle_Btn_BOM_View = By.cssSelector("div[class='jtoggler-control']");
+    public By More_filter_Btn_BOM_View = By.cssSelector("span[class='mr-05 btn-text']");
+    public By Item_Type_Filter_Search = By.cssSelector("div[class='Fl_RiskPartFilter z2parametric-contain'] div:nth-child(1) div:nth-child(2) div:nth-child(1) input:nth-child(1)");
+    public By First_Pagination = By.cssSelector("li[class='pagination-first page-item disabled']");
+    public By Previous_Pagination = By.cssSelector("li[class='pagination-prev page-item disabled']");
+    public By Next_Pagination = By.linkText("Next");
+    public By Last_Pagination = By.linkText("Last");
+
+
     //Data Explorer Drop list
     public void Z2D_Select_Data_Explorer_dropdown() {
         ElementActions.click(driver, Data_Explorer_dropdown);
