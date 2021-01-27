@@ -11,7 +11,7 @@ public class Landing_Page {
 
 
     // Data_Explorer Tab
-    public By Data_Explorer_dropdown = By.id("dropdownFormObs");
+    public By Data_Explorer_dropdown = By.xpath("//app-header-products-risk//a[@id='dropdownFormObs']");
     public By Data_Explorer_Tic = By.cssSelector("a[href='/dataexplorer']");
     public By Obsolescence_Tic = By.xpath("//a[normalize-space()='Obsolescence']");
     public By Compliance_Tic = By.xpath("//a[normalize-space()='Compliance']");

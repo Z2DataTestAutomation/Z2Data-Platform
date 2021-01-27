@@ -28,7 +28,7 @@ public class A_1_Data_Explorer_Test_Scenarios {
         Login_Obj.Z2D_SignIn();
     }
     @Test(description = "TS002 || Open Sandbox from Data Explorer", priority = 2)
-    public void Data_Explorer_Sanbox() {
+    public void Data_Explorer_Sandbox() {
         Data_Explorer_Page Data_Explorer_Obj = new Data_Explorer_Page(driver);
         Data_Explorer_Obj.Z2D_Select_Data_Explorer_dropdown();
         Data_Explorer_Obj.Z2D_Select_Data_Explorer_Tic();
